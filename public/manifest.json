@@ -13,6 +13,16 @@
 
 	"icons": [
 		{
+			"src": "favicon-192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+	{
+		"src": "favicon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
 			"src": "favicon.svg",
 			"sizes": "any",
 			"type": "image/svg+xml"
@@ -23,6 +33,9 @@
 	"display": "standalone",
 	"theme_color": "#0d0d0d",
 	"background_color": "#121212",
-	"lang": "en"
-	"orientation":"portrait"
+	"lang": "en",
+	"orientation":"portrait",
+	"scope": "/",
+	"description_long": "Habit Tracker helps you mark daily goals, track your progress visually, and keep a personal journal for each habit.",
+"prefer_related_applications": false
 }

@@ -1,7 +1,7 @@
 {
 	"short_name": "Habit Tracker",
 	"name": "Habit Tracker",
-	"desdescription": "Habit Tracker is a straightforward habit tracker that doesn't require registration. Easily mark your completed days, track your progress, and keep a journal for each habit.",
+	"desdescription": "Simple, no-signup habit tracker to mark daily goals, view progress, and journal your journey.",
 	"categories": ["education", "lifestyle", "productivity"],
 
 	"related_applications": [
@@ -19,9 +19,10 @@
 		}
 	],
 
-	"start_url": ".",
+	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#000000",
+	"theme_color": "#0d0d0d",
 	"background_color": "#121212",
 	"lang": "en"
+	"orientation":"portrait"
 }

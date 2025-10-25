@@ -1,9 +1,11 @@
 {
 	"name": "habit-tracker",
-	"description": "Habit tracker that tracks your progress, and keep a journal for each habit.",
-	"version": "0.20.2",
-	"homepage": "",
+	"version":"1.0.0",
+	"description": "A Habit tracker that helps you track your progress and keep a journal for each habit.",
 	"private": true,
+	"homepage": "https://yourusername.github.io/habit-tracker",
+	"author": "kiki",
+	"license": "MIT",
 	"dependencies": {
 		"chart.js": "^4.4.3",
 		"firebase": "^12.3.0",
@@ -28,18 +30,42 @@
 		"workbox-routing": "^6.6.0",
 		"workbox-strategies": "^6.6.0",
 		"workbox-streams": "^6.6.0",
-		"zustand": "^5.0.1"
+		"zustand": "^5.0.1",
+		"workbox-background-sync": "^6.6.0",
+		"workbox-broadcast-update": "^6.6.0",
+		"workbox-cacheable-response": "^6.6.0",
+		"workbox-core": "^6.6.0",
+		"workbox-expiration": "^6.6.0",
+		"workbox-google-analytics": "^6.6.1",
+		"workbox-navigation-preload": "^6.6.0",
+		"workbox-precaching": "^6.6.0",
+		"workbox-range-requests": "^6.6.0",
+		"workbox-routing": "^6.6.0",
+		"workbox-strategies": "^6.6.0",
+		"workbox-streams": "^6.6.0"
+
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.12.0",
+		"eslint-config-react-app": "^7.1.0",
+		"postcss": "^8.4.47",
+		"tailwindcss": "^3.4.13"
 	},
 	"scripts": {
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -b gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
+		"format": "prettier --write .",
+		"analyze": "source-map-explorer 'build/static/js/*.js'",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
 		"extends": [
-			"react-app"
+			"react-app",
+			"eslint:recommended",
+			"plugin:react/recommended"
 		]
 	},
 	"browserslist": {
